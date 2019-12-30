@@ -9,6 +9,7 @@ namespace UnrealBuildTool.Rules
 		{
             PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
             PrivatePCHHeaderFile = "SilvervineUE4LuaPCH.h";
+            bEnableUndefinedIdentifierWarnings = false; // fixed error C4668: '__cplusplus' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
 
             PublicIncludePaths.AddRange(new string[]
             {
